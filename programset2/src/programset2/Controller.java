@@ -1,0 +1,40 @@
+package programset2;
+/*Define a base class here as Controller*/
+public class Controller {
+	private String Name;
+	private String Type;
+	private String Core;
+	
+	/*Default constructor*/
+	Controller(){
+		Name = "TC1793";
+		Type = "32_byte";
+		Core = "Tricore";
+		
+	}
+	
+	Controller(String NameController){
+		/*this() will call the default constructor which is Controller() the first construct of class "Controller".....*/
+		/*......and set the initialise the variables */
+		this();
+		Name = NameController;
+	}
+	
+	Controller(String TypeController, String CoreController){
+		Type = TypeController;
+		Core = CoreController;
+		
+	}
+	
+	String getControllerN(){
+		return Name;
+	}
+
+	public String getControllerT(){
+		return Type;
+	}
+	public String getControllerC(){
+		return Core;
+	}
+	
+}

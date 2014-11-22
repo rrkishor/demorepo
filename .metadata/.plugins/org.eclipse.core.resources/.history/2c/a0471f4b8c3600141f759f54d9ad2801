@@ -1,0 +1,13 @@
+package programset2;
+
+public class MainDriver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Controller controller_name = new Controller();
+		System.out.println(controller_name.Name);
+		
+
+	}
+
+}
